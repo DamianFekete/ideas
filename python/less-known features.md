@@ -30,10 +30,3 @@ http://stackoverflow.com/questions/101268/hidden-features-of-python?lq=1
 * try/except/else
 * Unpacking+print() function
 * with statement
-Regex Debugging
-Sending to Generators
-Tab Completion in Interactive Interpreter
-Ternary Expression
-try/except/else
-Unpacking+print() function
-with statement
