@@ -9,6 +9,9 @@ To do this add ```net.ipv6.conf.all.disable_ipv6 = 1``` and run ```sysctl -p``` 
 To temporarily set it run ```sysctl -w net.ipv6.conf.all.disable_ipv6=1``` (no spaces).
 To check if IPv6 is disabled: ```ifconfig``` shouldn't show an IPv6 anymore (no restart needed).
 
+Unfortunately at restart an error will come up: ```sysctl: error: 'net.ipv6.conf.all.disable_ipv6' is an unknown key```
+To solve this the ipv6 modules has to be loaded at the time sysctl is called. Do this by adding ```ipv6``` to /etc/modules
+
 ## VirtualBox, serial port, /var/log/messages
 Comment the (last) line in ```/etc/inittab```:
 ```
